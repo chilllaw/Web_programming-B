@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        alert("Olá world! - Página Carregada");
+        function calc() {
+            var n1 = document.getElementById("n1").value;
+            var n2 = document.getElementById("n2").value;
+            var n3 = document.getElementById("n3").value;
+            if (n1>n2&&n1>n3) {
+            alert("o maior número é: " +n1);
+            }else if(n2>n1&&n2>n3){
+            alert("O maior número é: "+n2);
+            }else if(n3>n1&&n3>n2){
+            alert("O maior número é: "+n3);
+            }else{
+            alert("O valor é o mesmo ("+n1+")")
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset id="logform">
+            <legend>Maior número</legend>
+            <p>1° número: <input id = n1 type="number" size="30"></p>
+            <p>2° número: <input id = n2 type="number" size="30"></p>
+            <p>3° número: <input id = n3 type="number" size="30"></p>
+            <input type="submit" onclick="calc('');"/>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type ='text/css'>
+        #DPessoais {
+            border-style:dotted;
+            border-color: black;
+            background-color:lightblue;
+        }
+        #campos{
+            background-color:khaki;
+        }
+        #DProfissionais {
+            border-style:dotted;
+            border-color: black;
+            background-color:lightcoral;
+        }
+        #DProfissionais>textarea{
+            background-color:khaki;
+
+        }
+        #Acoes {
+            
+            border-style:dotted;
+            border-color: black;
+            background-color:lightgreen;
+        }
+        #butao1{
+            background-color:green;
+
+
+        }
+        #butao2{
+            background-color:orange;        
+        }        
+    </style>
+</head>
+<body>
+    <h2>Formulário de cadastro</h2>
+    <form action="">
+        <fieldset id="DPessoais">
+            <legend>Dados pessoais</legend>
+            <p>Nome: <input id = campos type="text" size="30"></p>
+            <p>E-mail: <input id = campos type="email" size="30"></p>
+            <p>Cidade: <input id = campos type="text" size="30"></p>
+            <p>Estado: <select name="Estados"  id = campos >
+                <option value = "PA">PA</option>
+                <option value = "CE">CE</option>
+                <option value = "SC">SC</option>
+                <option value = "SP">SP</option>
+            </select></p>
+        </fieldset>
+    </form>
+    <br></br>
+    <form action="">
+        <fieldset id="DProfissionais">
+            <legend>Dados profissionais</legend>
+            <h3>Cargo pretendido:</h3>
+            <input type="radio" name="cargo" value="AdSis">Analista de sistemas
+            <input type="radio" name="cargo" value="AdBD">Analista de banco de dados
+            <input type="radio" name="cargo" value="AdSup">Analista de suporte</br>
+            <h3>Tecnologia de interesse:</h3>
+            <input type="checkbox" name="Tech" value="java">Java
+            <input type="checkbox" name="Tech" value="html/css">HTML/CSS
+            <input type="checkbox" name="Tech" value="javascript">JavaScript
+            <input type="checkbox" name="Tech" value="SQL">SQL</br>
+            <h3>Mini-currículo:</h3>
+            <textarea rows="10" cols="80%"></textarea>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset id="Acoes">
+            <legend>Ações</legend>
+            <input type="button" value="Enviar" id="butao1">
+            <input type="button" value="Limpar" id="butao2">
+        </fieldset>
+    </form>
+</body>
+</html>
